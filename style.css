@@ -1,4 +1,41 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  padding: 20px;
+}
+
 button {
-    background-color: blanchedalmond;
-    margin: 1%;
+  font-size: 1rem; /* 16px if the root font size is 16px */
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fecf88;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  button {
+    font-size: 0.875rem; /* 14px */
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    font-size: 0.75rem; /* 12px */
+    padding: 6px 12px;
+  }
 }

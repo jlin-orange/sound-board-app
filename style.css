@@ -13,11 +13,10 @@ div {
 button {
   font-size: 1rem; /* 16px if the root font size is 16px */
   padding: 10px 20px;
-  margin: 10px;
   border: none;
-  border-radius: 5px;
   background-color: blanchedalmond;
   color: black;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -25,17 +24,15 @@ button:hover {
   background-color: #fecf88;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  button {
-    font-size: 0.875rem; /* 14px */
-    padding: 8px 16px;
-  }
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column by default */
+  gap: 0.75rem;
 }
 
-@media (max-width: 480px) {
-  button {
-    font-size: 0.75rem; /* 12px */
-    padding: 6px 12px;
+/* Responsive styles */
+@media (min-width: 768px) {
+  .button-grid {
+    grid-template-columns: 1fr 1fr; /* max 2 columns */
   }
 }

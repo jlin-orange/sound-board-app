@@ -6,18 +6,25 @@
   <title>Sound Board App</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div>
-    <h1>Josh</h1>
-    <button onclick="document.getElementById('sound1').play();">Oh!</button><br>
-    <button onclick="document.getElementById('sound2').play();">Huh?</button><br>
-    <button onclick="document.getElementById('sound3').play();">Villager</button><br>
-    <button onclick="document.getElementById('sound4').play();">Jabwhawha</button><br>
+    <h1>Joshua</h1>
+    
+    <div class="button-grid">
+      <button id="btn-oh">❗️ Oh!</button>
+      <button id="btn-huh">❓ Huh?</button>
+      <button id="btn-villager">🏠 Villager</button>
+      <button id="btn-jabwhawha">🤪 Jabwhawha</button>
+      <button id="btn-cubs">🐻 Cubs</button>
+      <button id="btn-woof">🐶 Woof</button>
+    </div>
+
   </div>
   
-  <audio id="sound1" src="sounds/oh.wav" preload="auto"></audio>
-  <audio id="sound2" src="sounds/huh.wav" preload="auto"></audio>
-  <audio id="sound3" src="sounds/villager.wav" preload="auto"></audio>
-  <audio id="sound4" src="sounds/jabwhawha.wav" preload="auto"></audio>
+
 </body>
+
+<script src="main.js"></script>
+
 </html>

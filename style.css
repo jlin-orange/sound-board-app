@@ -7,17 +7,19 @@ body {
 }
 
 div {
-  padding: 20px;
+  padding: 10px;
 }
 
 button {
   font-size: 1rem; /* 16px if the root font size is 16px */
-  padding: 10px 20px;
+  border-radius: .75rem;
+  padding: 10px;
   border: none;
   background-color: blanchedalmond;
   color: black;
   font-weight: bold;
   cursor: pointer;
+  width: 100%;
 }
 
 button:hover {
@@ -27,7 +29,22 @@ button:hover {
 .button-grid {
   display: grid;
   grid-template-columns: 1fr; /* 1 column by default */
-  gap: 0.75rem;
+}
+
+.button-with-counter {
+  display: inline-flex;       /* button + counter side by side */
+  align-items: center;        /* vertically center */
+  gap: 0.5rem;                /* space between button and counter */
+}
+
+.counter {
+  background: #E5E4E2;
+  border-radius: 1rem;       /* pill/round look */
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  min-width: 1.5rem;          /* ensures consistent circle size */
+  text-align: center;
+  transition: background-color 0.1s ease;
 }
 
 /* Responsive styles */
